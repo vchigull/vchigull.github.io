@@ -35,9 +35,9 @@
     <header>
       <div class="brand">Vaibhav Chigullapally</div>
       <nav aria-label="Main nav">
-        <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -45,90 +45,68 @@
     <main>
       <section class="hero" id="home">
         <h1>Hi — I build things on the web & work with data.</h1>
-        <p class="lead">Undergrad CS student (Uni. of Michigan) — I focus on full-stack development, data pipelines, and ML-enabled signal processing.</p>
+        <p class="lead">Undergrad CS student (University of Michigan). I focus on full-stack development, data pipelines, and ML-enabled signal processing.</p>
         <div style="margin-top:12px">
           <a class="button" href="#contact">Get in touch</a>
         </div>
       </section>
 
-      <section id="about">
-        <h2 class="section-title">About & Education</h2>
-        <div class="grid">
-          <article class="card">
-            <div>
-              <div class="eyebrow">Education</div>
-              <h3>University of Michigan — College of Engineering</h3>
-              <div class="meta">
-                <span>BEng Computer Science, Minor in Business</span>
-                <span>Aug 2023 – May 2027</span>
-              </div>
-              <p class="muted" style="margin-top:6px">Relevant coursework: Data Structures, Computer Organization, ML, Software Engineering, Comp Linear Algebra.</p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div>
-              <div class="eyebrow">Contact</div>
-              <h3>Vaibhav Chigullapally</h3>
-              <div class="meta">
-                <span>313-613-9576</span>
-                <span><a href="mailto:vchigull@umich.edu">vchigull@umich.edu</a></span>
-              </div>
-              <p class="muted" style="margin-top:6px">@vchigull • Personal Website</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
       <section id="experience">
         <h2 class="section-title">Experience</h2>
-
-        <!-- experience grid -->
         <div class="grid" aria-live="polite">
 
-          <!-- Emergent Holdings (3 bullets) -->
           <article class="card">
             <div>
               <div class="eyebrow">Software Engineer Intern</div>
               <h3>Emergent Holdings</h3>
               <div class="meta"><span>May 2025 – Present</span><span>Lansing, MI</span></div>
               <ul>
-                <li>Built a website (HTML/CSS) documenting document-management tooling, with tutorials and a user forum.</li>
-                <li>Improved issue resolution via Jira; reduced downtime and boosted user satisfaction by ~15%.</li>
-                <li>Automated file organization with PowerShell scripts, increasing operational efficiency by 30%.</li>
+                <li>Built a site documenting document-management tooling with tutorials and a user forum.</li>
+                <li>Resolved application issues during sprints and completed user stories to meet release goals.</li>
+                <li>Automated file organization using PowerShell scripts to improve operational efficiency.</li>
               </ul>
             </div>
           </article>
 
-          <!-- University of Michigan research (3 bullets) -->
           <article class="card">
             <div>
               <div class="eyebrow">Undergraduate Research Assistant</div>
               <h3>University of Michigan</h3>
               <div class="meta"><span>Jan 2025 – Jul 2025</span><span>Ann Arbor, MI</span></div>
               <ul>
-                <li>Used LLMs and TensorFlow to enhance a signal-processing pipeline and sensor data analysis.</li>
-                <li>Organized large sound datasets in Jupyter to speed ML training and improve reliability.</li>
+                <li>Enhanced a signal-processing pipeline using LLMs and TensorFlow for sensor data analysis.</li>
+                <li>Collected and cleaned large sound datasets to improve downstream model reliability.</li>
                 <li>Implemented and tested ML models in Python for sensor-signal interpretation tasks.</li>
               </ul>
             </div>
           </article>
 
-          <!-- Ascend Consulting (3 bullets) -->
           <article class="card">
             <div>
-              <div class="eyebrow">VP Professional Development / Project Manager</div>
+              <div class="eyebrow">Project Manager</div>
               <h3>Ascend Consulting</h3>
               <div class="meta"><span>Jan 2025 – Present</span><span>Ann Arbor, MI</span></div>
               <ul>
-                <li>Designed onboarding for new PMs, reducing onboarding time ~25% via development modules.</li>
-                <li>Organized leadership workshops and career development sessions with guest speakers.</li>
-                <li>Led UX research for PFF’s sportsbook and delivered Figma prototypes and implementation guidelines.</li>
+                <li>Managed client projects end-to-end; scoped requirements, coordinated teams, and delivered on deadlines.</li>
+                <li>Created project plans and tracked progress using Agile practices and Jira boards.</li>
+                <li>Collaborated with designers to prototype solutions and present to stakeholders.</li>
               </ul>
             </div>
           </article>
 
-          <!-- Wolverine Sports Analytics (2 bullets, per your request) -->
+          <article class="card">
+            <div>
+              <div class="eyebrow">VP, Professional Development</div>
+              <h3>Ascend Consulting</h3>
+              <div class="meta"><span>Jan 2025 – Present</span><span>Ann Arbor, MI</span></div>
+              <ul>
+                <li>Designed an onboarding program for new project managers, reducing ramp time by ~25%.</li>
+                <li>Organized leadership workshops and career development sessions with guest speakers.</li>
+                <li>Coached members on client communication and technical presentation skills.</li>
+              </ul>
+            </div>
+          </article>
+
           <article class="card">
             <div>
               <div class="eyebrow">Wolverine Sports Analytics</div>
@@ -136,7 +114,7 @@
               <div class="meta"><span>Spring 2025</span><span>Ann Arbor, MI</span></div>
               <ul>
                 <li>Analyzed player and play-level data to produce weekly performance reports for coaching staff.</li>
-                <li>Built lightweight dashboards to visualize trends and inform lineup/strategy decisions.</li>
+                <li>Built lightweight dashboards to visualize trends and inform lineup and strategy decisions.</li>
               </ul>
             </div>
           </article>
@@ -150,7 +128,7 @@
           <article class="card">
             <div>
               <h3>Fantasy Football Helper</h3>
-              <p class="muted">Pipeline to fetch/clean NFL data and run integer-linear optimization for weekly lineups. (Python, ESPN API)</p>
+              <p class="muted">Pipeline to fetch and clean NFL data and run integer-linear optimization for weekly lineups. (Python)</p>
             </div>
           </article>
 
@@ -161,4 +139,61 @@
             </div>
           </article>
 
-          <article c
+          <article class="card">
+            <div>
+              <h3>Signal Processing / ML Tools</h3>
+              <p class="muted">Research work & tooling for sensor signal pipelines using Python, TensorFlow, and Jupyter notebooks.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 class="section-title">Skills & Interests</h2>
+        <div class="grid">
+          <article class="card">
+            <div>
+              <h3>Technical</h3>
+              <p class="muted">Java, Python, C/C++, SQL, JavaScript, HTML/CSS, R, PowerShell, TensorFlow</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <h3>Other</h3>
+              <p class="muted">Varsity HS Football, 2nd-degree Black Belt, 100+ volunteer hours. Interests: Football/NFL, weightlifting, puzzles.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="grid">
+          <article class="card">
+            <div>
+              <h3>Email</h3>
+              <p class="muted"><a href="mailto:vchigull@umich.edu">vchigull@umich.edu</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <h3>Phone</h3>
+              <p class="muted">313-613-9576</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Vaibhav Chigullapally</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
