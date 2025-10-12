@@ -23,6 +23,14 @@
     footer{margin-top:28px;padding-top:16px;border-top:1px solid rgba(0,0,0,0.06);color:var(--muted);font-size:0.9rem}
     a.button{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
     @media (max-width:520px){.wrap{margin:16px;padding:16px}.hero{padding:18px}}
+
+    /* Small helpers for experience layout */
+    .eyebrow{font-size:.85rem;color:var(--muted);margin-bottom:6px}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+    .meta span::before{content:"•";margin:0 6px;color:var(--muted)}
+    .meta span:first-child::before{content:""}
+    .card ul{margin:6px 0 0 16px;padding:0}
+    .card li{margin:4px 0}
   </style>
 </head>
 <body>
@@ -31,6 +39,7 @@
       <div class="brand">Your Name</div>
       <nav aria-label="Main nav">
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -48,6 +57,54 @@
       <section id="about">
         <h2 style="font-size:1.05rem;margin:18px 0 8px">About</h2>
         <p class="muted">I'm a software engineer who likes readable code and simple interfaces. I work with JavaScript and Python, and I enjoy building small, maintainable apps.</p>
+      </section>
+
+      <!-- NEW: Experience -->
+      <section id="experience">
+        <h2 style="font-size:1.05rem;margin:18px 0 8px">Experience</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="eyebrow">Software Engineer Intern</div>
+            <h3>Emergent Holdings</h3>
+            <div class="meta">
+              <span>May 2025 – Present</span>
+              <span>Lansing, MI</span>
+            </div>
+            <ul>
+              <li>Built an internal site documenting document-management tooling with tutorials and a feedback forum.</li>
+              <li>Resolved application issues during sprints; completed user stories and supported troubleshooting.</li>
+              <li>Automated file organization and cleanup via PowerShell scripts.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="eyebrow">Undergraduate Research Assistant</div>
+            <h3>University of Michigan</h3>
+            <div class="meta">
+              <span>Jan 2025 – Jul 2025</span>
+              <span>Ann Arbor, MI</span>
+            </div>
+            <ul>
+              <li>Developed parts of a signal-processing pipeline leveraging LLMs to analyze sensor data.</li>
+              <li>Collected and cleaned large sound datasets to ensure downstream model reliability.</li>
+              <li>Implemented and tested ML models for sensor-signal interpretation.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="eyebrow">VP of Professional Development / Project Manager</div>
+            <h3>Ascend Consulting</h3>
+            <div class="meta">
+              <span>Jan 2025 – Present</span>
+              <span>Ann Arbor, MI</span>
+            </div>
+            <ul>
+              <li>Designed an onboarding program for new project managers, reducing onboarding time by 25%.</li>
+              <li>Organized leadership workshops with guest speakers to grow member skills.</li>
+              <li>Led UX research for PFF’s sportsbook; delivered Figma redesigns to streamline key flows.</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <section id="projects">
@@ -71,17 +128,6 @@
       <section id="contact">
         <h2 style="font-size:1.05rem;margin:18px 0 8px">Contact</h2>
         <p class="muted">Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      </section>
-    </main>
+      </se
 
-    <footer>
-      <div>© <span id="year"></span> Your Name</div>
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
 
