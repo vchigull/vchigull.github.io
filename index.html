@@ -1,42 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Simple Site</title>
+  <title>Vaibhav Chigullapally</title>
   <style>
-    /* Minimal, responsive, single-file style */
     :root{--bg:#ffffff;--text:#0b1220;--muted:#5b6770;--accent:#2563eb}
     @media (prefers-color-scheme:dark){:root{--bg:#071019;--text:#e6eef8;--muted:#9aa6b0;--accent:#60a5fa}}
     *{box-sizing:border-box}html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
-    .wrap{max-width:900px;margin:36px auto;padding:20px}
+    .wrap{max-width:980px;margin:36px auto;padding:20px}
     header{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{font-weight:700;font-size:1.1rem}
+    .brand{font-weight:700;font-size:1.15rem}
     nav a{color:var(--muted);text-decoration:none;margin-left:14px}
-    .hero{margin:32px 0;padding:28px;background:rgba(0,0,0,0.03);border-radius:10px}
-    .hero h1{margin:0 0 6px;font-size:1.5rem}
+    .hero{margin:28px 0;padding:22px;background:rgba(0,0,0,0.03);border-radius:10px}
+    .hero h1{margin:0 0 6px;font-size:1.45rem}
     .lead{margin:0;color:var(--muted)}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:18px}
-    .card{padding:12px;border-radius:8px;background:color-mix(in srgb, var(--bg) 92%, black);border:1px solid rgba(0,0,0,0.05)}
-    .card h3{margin:0 0 6px;font-size:1rem}
+    .section-title{font-size:1.05rem;margin:18px 0 8px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+    .card{padding:14px;border-radius:8px;background:color-mix(in srgb, var(--bg) 94%, black);border:1px solid rgba(0,0,0,0.05);min-height:140px;display:flex;flex-direction:column;justify-content:space-between}
+    .eyebrow{font-size:.85rem;color:var(--muted);margin-bottom:6px}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:.9rem;margin-bottom:8px}
+    .meta span::before{content:"•";margin:0 6px;color:var(--muted)}
+    .meta span:first-child::before{content:""}
+    .card ul{margin:6px 0 0 18px;padding:0}
+    .card li{margin:6px 0;font-size:0.95rem;color:var(--text);line-height:1.18}
     .muted{color:var(--muted);font-size:0.95rem}
     footer{margin-top:28px;padding-top:16px;border-top:1px solid rgba(0,0,0,0.06);color:var(--muted);font-size:0.9rem}
     a.button{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
-    @media (max-width:520px){.wrap{margin:16px;padding:16px}.hero{padding:18px}}
-
-    /* Small helpers for experience layout */
-    .eyebrow{font-size:.85rem;color:var(--muted);margin-bottom:6px}
-    .meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
-    .meta span::before{content:"•";margin:0 6px;color:var(--muted)}
-    .meta span:first-child::before{content:""}
-    .card ul{margin:6px 0 0 16px;padding:0}
-    .card li{margin:4px 0}
+    @media (max-width:520px){.wrap{margin:16px;padding:16px}.hero{padding:18px}.card{min-height:unset}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="brand">Your Name</div>
+      <div class="brand">Vaibhav Chigullapally</div>
       <nav aria-label="Main nav">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -47,87 +44,121 @@
 
     <main>
       <section class="hero" id="home">
-        <h1>Hi — I build things on the web.</h1>
-        <p class="lead">Simple portfolio template. Replace this text with a short 1–2 sentence bio and add links to your projects below.</p>
+        <h1>Hi — I build things on the web & work with data.</h1>
+        <p class="lead">Undergrad CS student (Uni. of Michigan) — I focus on full-stack development, data pipelines, and ML-enabled signal processing.</p>
         <div style="margin-top:12px">
           <a class="button" href="#contact">Get in touch</a>
         </div>
       </section>
 
       <section id="about">
-        <h2 style="font-size:1.05rem;margin:18px 0 8px">About</h2>
-        <p class="muted">I'm a software engineer who likes readable code and simple interfaces. I work with JavaScript and Python, and I enjoy building small, maintainable apps.</p>
+        <h2 class="section-title">About & Education</h2>
+        <div class="grid">
+          <article class="card">
+            <div>
+              <div class="eyebrow">Education</div>
+              <h3>University of Michigan — College of Engineering</h3>
+              <div class="meta">
+                <span>BEng Computer Science, Minor in Business</span>
+                <span>Aug 2023 – May 2027</span>
+              </div>
+              <p class="muted" style="margin-top:6px">Relevant coursework: Data Structures, Computer Organization, ML, Software Engineering, Comp Linear Algebra.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <div class="eyebrow">Contact</div>
+              <h3>Vaibhav Chigullapally</h3>
+              <div class="meta">
+                <span>313-613-9576</span>
+                <span><a href="mailto:vchigull@umich.edu">vchigull@umich.edu</a></span>
+              </div>
+              <p class="muted" style="margin-top:6px">@vchigull • Personal Website</p>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <!-- NEW: Experience -->
       <section id="experience">
-        <h2 style="font-size:1.05rem;margin:18px 0 8px">Experience</h2>
-        <div class="cards">
+        <h2 class="section-title">Experience</h2>
+
+        <!-- experience grid -->
+        <div class="grid" aria-live="polite">
+
+          <!-- Emergent Holdings (3 bullets) -->
           <article class="card">
-            <div class="eyebrow">Software Engineer Intern</div>
-            <h3>Emergent Holdings</h3>
-            <div class="meta">
-              <span>May 2025 – Present</span>
-              <span>Lansing, MI</span>
+            <div>
+              <div class="eyebrow">Software Engineer Intern</div>
+              <h3>Emergent Holdings</h3>
+              <div class="meta"><span>May 2025 – Present</span><span>Lansing, MI</span></div>
+              <ul>
+                <li>Built a website (HTML/CSS) documenting document-management tooling, with tutorials and a user forum.</li>
+                <li>Improved issue resolution via Jira; reduced downtime and boosted user satisfaction by ~15%.</li>
+                <li>Automated file organization with PowerShell scripts, increasing operational efficiency by 30%.</li>
+              </ul>
             </div>
-            <ul>
-              <li>Built an internal site documenting document-management tooling with tutorials and a feedback forum.</li>
-              <li>Resolved application issues during sprints; completed user stories and supported troubleshooting.</li>
-              <li>Automated file organization and cleanup via PowerShell scripts.</li>
-            </ul>
           </article>
 
+          <!-- University of Michigan research (3 bullets) -->
           <article class="card">
-            <div class="eyebrow">Undergraduate Research Assistant</div>
-            <h3>University of Michigan</h3>
-            <div class="meta">
-              <span>Jan 2025 – Jul 2025</span>
-              <span>Ann Arbor, MI</span>
+            <div>
+              <div class="eyebrow">Undergraduate Research Assistant</div>
+              <h3>University of Michigan</h3>
+              <div class="meta"><span>Jan 2025 – Jul 2025</span><span>Ann Arbor, MI</span></div>
+              <ul>
+                <li>Used LLMs and TensorFlow to enhance a signal-processing pipeline and sensor data analysis.</li>
+                <li>Organized large sound datasets in Jupyter to speed ML training and improve reliability.</li>
+                <li>Implemented and tested ML models in Python for sensor-signal interpretation tasks.</li>
+              </ul>
             </div>
-            <ul>
-              <li>Developed parts of a signal-processing pipeline leveraging LLMs to analyze sensor data.</li>
-              <li>Collected and cleaned large sound datasets to ensure downstream model reliability.</li>
-              <li>Implemented and tested ML models for sensor-signal interpretation.</li>
-            </ul>
           </article>
 
+          <!-- Ascend Consulting (3 bullets) -->
           <article class="card">
-            <div class="eyebrow">VP of Professional Development / Project Manager</div>
-            <h3>Ascend Consulting</h3>
-            <div class="meta">
-              <span>Jan 2025 – Present</span>
-              <span>Ann Arbor, MI</span>
+            <div>
+              <div class="eyebrow">VP Professional Development / Project Manager</div>
+              <h3>Ascend Consulting</h3>
+              <div class="meta"><span>Jan 2025 – Present</span><span>Ann Arbor, MI</span></div>
+              <ul>
+                <li>Designed onboarding for new PMs, reducing onboarding time ~25% via development modules.</li>
+                <li>Organized leadership workshops and career development sessions with guest speakers.</li>
+                <li>Led UX research for PFF’s sportsbook and delivered Figma prototypes and implementation guidelines.</li>
+              </ul>
             </div>
-            <ul>
-              <li>Designed an onboarding program for new project managers, reducing onboarding time by 25%.</li>
-              <li>Organized leadership workshops with guest speakers to grow member skills.</li>
-              <li>Led UX research for PFF’s sportsbook; delivered Figma redesigns to streamline key flows.</li>
-            </ul>
           </article>
+
+          <!-- Wolverine Sports Analytics (2 bullets, per your request) -->
+          <article class="card">
+            <div>
+              <div class="eyebrow">Wolverine Sports Analytics</div>
+              <h3>Student Analyst</h3>
+              <div class="meta"><span>Spring 2025</span><span>Ann Arbor, MI</span></div>
+              <ul>
+                <li>Analyzed player and play-level data to produce weekly performance reports for coaching staff.</li>
+                <li>Built lightweight dashboards to visualize trends and inform lineup/strategy decisions.</li>
+              </ul>
+            </div>
+          </article>
+
         </div>
       </section>
 
       <section id="projects">
-        <h2 style="font-size:1.05rem;margin:18px 0 8px">Projects</h2>
-        <div class="cards">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid">
           <article class="card">
-            <h3>Project A</h3>
-            <p class="muted">Short one-line description. <a href="#" style="color:var(--accent)">View</a></p>
+            <div>
+              <h3>Fantasy Football Helper</h3>
+              <p class="muted">Pipeline to fetch/clean NFL data and run integer-linear optimization for weekly lineups. (Python, ESPN API)</p>
+            </div>
           </article>
+
           <article class="card">
-            <h3>Project B</h3>
-            <p class="muted">Short one-line description. <a href="#" style="color:var(--accent)">View</a></p>
+            <div>
+              <h3>Stock Market Simulator</h3>
+              <p class="muted">C++ simulator using priority queues to match buy/sell orders and compute trader profits and median prices.</p>
+            </div>
           </article>
-          <article class="card">
-            <h3>Project C</h3>
-            <p class="muted">Short one-line description. <a href="#" style="color:var(--accent)">View</a></p>
-          </article>
-        </div>
-      </section>
 
-      <section id="contact">
-        <h2 style="font-size:1.05rem;margin:18px 0 8px">Contact</h2>
-        <p class="muted">Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      </se
-
-
+          <article c
